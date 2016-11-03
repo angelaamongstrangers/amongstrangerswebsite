@@ -1,0 +1,10 @@
+.product-page {
+  width: 1000px;
+  height: auto;
+}
+.product-page .img-wrapper {
+  width: 50%;
+}
+.product-page .text-box {
+  width: 50%;
+}

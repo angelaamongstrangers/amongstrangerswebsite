@@ -73,9 +73,9 @@ html {
   }
 
   .navbar-brand {
+    float: none !important;
     position: absolute;
-    width: 100%;
-    left: 0;
+    left: 45%;
     top: 0;
     text-align: center;
     margin: auto;
@@ -266,7 +266,7 @@ html {
   }
 }
 footer {
-  height: 50px;
+  max-height: 50px;
   border-top: none !important;
   background-color: #e2cabe;
 }

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Among Strangers</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script src="js/jquery.mixitup.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <link rel="stylesheet" href="styles/css/global.css" media="screen" title="no title">
+  <link rel="stylesheet" href="styles/css/shop.css" media="screen" title="no title">
+
+</head>
+  <body>
+    <nav class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <div id="navIcon" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false" aria-controls="navbar">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <a class="navbar-brand" href="index.html"><img src="images/test-logo.png"></a>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-left">
+            <li class="dropdown">
+              <a href="thee-witch.html" class="dropdown-toggle" data-toggle="dropdown">Collections <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="thee-witch.html">Thee, Witch</a></li>
+                <li><a href="dark-rose.html">Dark Rose</a></li>
+                <li><a href="new-moon.html">New Moon</a></li>
+              </ul>
+            </li>
+            <li><a href="shop.html">Shop</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+
+    <!-- filter-wrapper -->
+    <div class="filter-wrapper container-fluid">
+      <nav class="navbar">
+        <ul class="nav navbar-nav filter-nav" id="filter">
+          <li class="filter current" data-filter="all"><a href="#">All</a></li>
+          <li class="filter" data-filter=".necklace"><a href="#">Necklace</a></li>
+          <li class="filter" data-filter=".cuff"><a href="#">Cuff</a></li>
+          <li class="filter" data-filter=".ring"><a href="#">Ring</a></li>
+          <li class="filter" data-filter=".earrings"><a href="#">Earrings</a></li>
+        </ul>
+      </nav>
+    </div><!-- end of filter-wrapper -->
+
+      <!-- products -->
+        <header>thee, witch</header>
+
+          <div class="product-container" id="container">
+
+            <div class="mix necklace product-box">
+              <div class="product-image product-image1">
+                <a  class="see-product" href="product-page.html">
+                  <div class="color-box"></div>
+                  <div class="text-box">
+                    <p>view product</p>
+                  </div>
+                </a>
+              </div>
+              <div class="product-details">
+                <h5>name</h5>
+                <p>$$$</p>
+              </div>
+            </div>
+            <div class="mix necklace product-box">
+              <div class="product-image product-image1">
+                <a  class="see-product" href="#">
+                  <div class="color-box"></div>
+                  <div class="text-box">
+                    <p>view product</p>
+                  </div>
+                </a>
+              </div>
+              <div class="product-details">
+                <h5>name</h5>
+                <p>$$$</p>
+              </div>
+            </div>
+            <div class="mix earrings product-box">
+              <div class="product-image product-image1">
+                <a  class="see-product" href="#">
+                  <div class="color-box"></div>
+                  <div class="text-box">
+                    <p>view product</p>
+                  </div>
+                </a>
+              </div>
+              <div class="product-details">
+                <h5>name</h5>
+                <p>$$$</p>
+              </div>
+            </div>
+            <div class="mix ring product-box">
+              <div class="product-image product-image1">
+                <a  class="see-product" href="#">
+                  <div class="color-box"></div>
+                  <div class="text-box">
+                    <p>view product</p>
+                  </div>
+                </a>
+              </div>
+              <div class="product-details">
+                <h5>name</h5>
+                <p>$$$</p>
+              </div>
+            </div>
+            <div class="mix cuff product-box">
+              <div class="product-image product-image1">
+                <a  class="see-product" href="#">
+                  <div class="color-box"></div>
+                  <div class="text-box">
+                    <p>view product</p>
+                  </div>
+                </a>
+              </div>
+              <div class="product-details">
+                <h5>name</h5>
+                <p>$$$</p>
+              </div>
+            </div>
+
+            <div class="gap"></div>
+            <div class="gap"></div>
+
+          </div><!-- end of product-container -->
+
+    <footer>
+      <p class="text-center">&copy 2016 Among Strangers</a></p>
+    </footer>
+
+    <script>
+      $(document).ready(function(){
+        $('#navIcon').click(function(){
+      		$(this).toggleClass('open');
+      	});
+
+        $(function() {
+          $('#container').mixItUp();
+        });
+
+
+        $('.filter-nav li a').click(function() {
+          $(this).css('outline','none');
+            $('.filter-nav .current').removeClass('current');
+            $(this).parent().addClass('current')
+            // return false;
+          });
+
+
+      });
+
+    </script>
+  </body>
+</html>

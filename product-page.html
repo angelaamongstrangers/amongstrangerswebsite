@@ -12,9 +12,9 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
   <!-- <script src="js/sticky-kit.min.js"></script> -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-  <link rel="stylesheet" href="styles/css/homepage.css" media="screen" title="no title">
   <link rel="stylesheet" href="styles/css/global.css" media="screen" title="no title">
-  <link rel="stylesheet" href="styles/css/collections.css" media="screen" title="no title">
+  <link rel="stylesheet" href="styles/css/product.css" media="screen" title="no title">
+
 
 </head>
   <body>
@@ -52,48 +52,20 @@
         </div><!-- /.navbar-collapse -->
     </nav>
 
-
-      <!-- homepage content -->
-      <div class="homepage-main">
-
-        <div class="homepage-main__hero-wrapper">
-          <div class="slider-for">
-            <div class="hero"></div>
-            <div class="hero"></div>
-            <div class="hero"></div>
-          </div>
-
-          <div class="logo-lockup">
-            <img src="images/test-logo.png" alt="" />
-            <h1>among strangers</h1>
-          </div>
-        </div><!-- end of hero-wrapper -->
-
-        <div class="homepage-main__mini-slider">
-          <div class="slider-nav">
-            <img class="slider-img slider-1" src="images/test-hero.jpg">
-            <img class="slider-img slider-2" src="images/test-hero.jpg">
-            <img class="slider-img slider-3" src="images/test-hero.jpg">
-            <img class="slider-img slider-4" src="images/test-hero.jpg">
-          </div>
-        </div><!-- end of mini-slider -->
-
-        <div class="homepage-main__content">
-          <div class="text-box">
-            <h4>thee, witch</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat feugiat arcu, vel viverra leo ullamcorper pharetra. Cras aliquet mollis orci mollis tempor. Vivamus a risus sit amet orci tristique ultrices ac ac nunc. Fusce dictum purus a magna molestie, ac facilisis dolor pulvinar. Morbi id urna urna. Mauris maximus nibh quis accumsan venenatis. Aliquam tempus ac tellus at euismod.
-            </p>
-            <a href="#"><h5>Shop Collection</h5></a><br>
-            <a href="#"><h5>View Previous Collection</h5></a>
-
-          </div>
+    <div class="product-page">
+      <div class="img-wrapper">
+        <div class="img-wrapper__big-img">
+          <img src="images/test-hero.jpg" alt="" />
         </div>
+        <div class="img-wrapper__sm-img">
+          <img src="images/test-hero.jpg" alt="" />
+          <img src="images/test-hero.jpg" alt="" />
+        </div>
+      </div>
+      <div class="text-box">
 
-
-
-      </div><!-- end of homepage-main -->
-
+      </div>
+    </div>
 
     <footer>
       <p class="text-center">&copy 2016 Among Strangers</a></p>
@@ -104,30 +76,6 @@
         $('#navIcon').click(function(){
       		$(this).toggleClass('open');
       	});
-
-        $('.slider-for').slick({
-           autoplay: true,
-           slidesToShow: 1,
-           slidesToScroll: 1,
-           arrows: false,
-           fade: true,
-           asNavFor: '.slider-nav'
-        });
-        $('.slider-nav').slick({
-           slidesToShow: 3,
-           arrows: false,
-           slidesToScroll: 1,
-           asNavFor: '.slider-for',
-           centerMode: true,
-           focusOnSelect: true
-        });
-
-        // $('.autoplay').slick({
-        //  autoplay: true,
-        //  autoplaySpeed: 3000,
-        //  arrows: false,
-        //  fade: true
-        // });
 
       });
 

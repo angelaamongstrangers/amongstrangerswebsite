@@ -1,0 +1,22 @@
+$bg-color: #e2cabe;
+$bg-color2: #f4ddcd;
+$brand-color: #d6b2a4;
+$brand-color2: #e2cabe;
+$brand-color3: #eddad3;
+
+.product-page {
+  width: 1000px;
+  height: auto;
+  .img-wrapper {
+    width: 50%;
+    &__big-img {
+
+    }
+    &__sm-img {
+
+    }
+  }
+  .text-box {
+    width: 50%;
+  }
+}
