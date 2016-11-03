@@ -1,6 +1,8 @@
-$bg-color: #f4ddcd;
+$bg-color: #e2cabe;
+$bg-color2: #f4ddcd;
 $brand-color: #d6b2a4;
-$brand-color2: #eddad3;
+$brand-color2: #e2cabe;
+$brand-color3: #eddad3;
 
 html {
   background-color: $bg-color;
@@ -15,6 +17,15 @@ html {
   margin-bottom: 0 !important;
   height: 75px;
   padding: 10px 0;
+  background-color: $bg-color;
+  z-index: 99999;
+  border: none !important;
+}
+
+.navbar-nav {
+  @media only screen and (max-width: 768px) {
+    margin: 10px;
+  }
 }
 
 .navbar-default {
@@ -27,6 +38,10 @@ html {
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   border-color: transparent;
+  background-color: $bg-color;
+  @media only screen and (max-width: 768px) {
+    padding: 10px;
+  }
 }
 
 .navbar-default .navbar-brand {
@@ -178,7 +193,7 @@ html {
   }
 
   .navbar-left li {
-padding: 0;
+    padding: 0;
   }
 
   .navbar-right li {

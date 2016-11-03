@@ -1,6 +1,8 @@
-$bg-color: #f4ddcd;
+$bg-color: #e2cabe;
+$bg-color2: #f4ddcd;
 $brand-color: #d6b2a4;
-$brand-color2: #eddad3;
+$brand-color2: #e2cabe;
+$brand-color3: #eddad3;
 
 //homepage
 
@@ -13,7 +15,7 @@ $brand-color2: #eddad3;
     width: 100%;
     .hero {
       display: block;
-      background: url(../images/test-hero.jpg) no-repeat;
+      background: url(../../images/test-hero.jpg) no-repeat;
       height: 450px;
       overflow: hidden;
       background-size: cover;
@@ -142,6 +144,7 @@ $brand-color2: #eddad3;
         padding-top: 10px;
         padding-bottom: 5px;
         border-bottom: 3px $brand-color solid;
+        margin: 10px 12px 5px 0;
         @media only screen and (max-width: 555px) {
           text-align: center;
           margin: 0 auto;

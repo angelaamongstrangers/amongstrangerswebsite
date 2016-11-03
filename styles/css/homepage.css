@@ -9,7 +9,7 @@
 }
 .homepage-main__hero-wrapper .hero {
   display: block;
-  background: url(../images/test-hero.jpg) no-repeat;
+  background: url(../../images/test-hero.jpg) no-repeat;
   height: 450px;
   overflow: hidden;
   background-size: cover;
@@ -150,6 +150,7 @@
   padding-top: 10px;
   padding-bottom: 5px;
   border-bottom: 3px #d6b2a4 solid;
+  margin: 10px 12px 5px 0;
 }
 @media only screen and (max-width: 555px) {
   .homepage-main__content .diamond-text a h5 {
