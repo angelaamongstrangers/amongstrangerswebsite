@@ -2,8 +2,31 @@ html {
   background-color: #f4ddcd;
 }
 
+.nav li {
+  text-transform: uppercase;
+  font-size: 0.85em;
+}
+
 .navbar {
   margin-bottom: 0 !important;
+  height: 75px;
+  padding: 10px 0;
+}
+
+.navbar-default {
+  background-color: #eddad3;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #000;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: transparent;
+}
+
+.navbar-default .navbar-brand {
+  color: #000;
 }
 
 @media only screen and (min-width: 900px) {
@@ -26,8 +49,12 @@ html {
 }
 
 @media only screen and (min-width: 900px) {
-  .navbar-right li {
-    padding: 0 25px;
+  .navbar-right {
+    margin-right: 0;
+  }
+
+  .navbar-right li:not(:first-child) {
+    padding: 0 80px;
   }
 
   .navbar-brand {
@@ -226,7 +253,7 @@ html {
 footer {
   height: 50px;
   border-top: none !important;
-  background-color: #f4ddcd;
+  background-color: #eddad3;
 }
 
 footer p {

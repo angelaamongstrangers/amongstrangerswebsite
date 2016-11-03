@@ -1,12 +1,36 @@
 $bg-color: #f4ddcd;
 $brand-color: #d6b2a4;
+$brand-color2: #eddad3;
 
 html {
   background-color: $bg-color;
 }
 
+.nav li {
+  text-transform: uppercase;
+  font-size: 0.85em;
+}
+
 .navbar {
   margin-bottom: 0 !important;
+  height: 75px;
+  padding: 10px 0;
+}
+
+.navbar-default {
+  background-color: $brand-color2;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #000;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: transparent;
+}
+
+.navbar-default .navbar-brand {
+    color: #000;
 }
 
 
@@ -26,8 +50,14 @@ html {
     }
   }
 
+  .navbar-right {
+    margin-right: 0;
+  }
+
   .navbar-right li {
-    padding: 0 25px;
+    &:not(:first-child) {
+      padding: 0 80px;
+    }
   }
 
   .navbar-brand {
@@ -271,7 +301,7 @@ padding: 0;
 footer {
   height: 50px;
   border-top: none !important;
-  background-color: $bg-color;
+  background-color: $brand-color2;
 }
 footer p {
   line-height: 50px;

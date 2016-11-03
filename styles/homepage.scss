@@ -1,5 +1,6 @@
 $bg-color: #f4ddcd;
 $brand-color: #d6b2a4;
+$brand-color2: #eddad3;
 
 //homepage
 
@@ -13,20 +14,27 @@ $brand-color: #d6b2a4;
     .hero {
       display: block;
       background: url(../images/test-hero.jpg) no-repeat;
-      height: 400px;
+      height: 450px;
       overflow: hidden;
       background-size: cover;
       background-position: 10% 45%;
       opacity: 0.7;
       position: relative;
+      @media only screen and (max-width: 528px) {
+        background-position: 36% 45%;
+        height: 350px;
+      }
     }
     .logo-lockup {
       position: absolute;
-      top: 30%;
+      top: 20%;
       // left: 50%;
       width: 100%;
       padding: 10px;
       text-align: center;
+      img {
+        width: 300px;
+      }
     }
   }//end of hero-wrapper
 
@@ -34,8 +42,12 @@ $brand-color: #d6b2a4;
     width: 1000px;
     height: 550px;
     margin: 0 auto;
+    max-width: 100%;
     // background-color: red;
     position: relative;
+    @media only screen and (max-width: 500px) {
+      height: 500px;
+    }
     .diamond-img {
       opacity: 0.3;
       float: left;
@@ -64,8 +76,15 @@ $brand-color: #d6b2a4;
           display: block;
           max-width: 145%;
         }
+        @media only screen and (max-width: 828px) {
+          width: 150px;
+          height: 150px
+        }
       }
     }// end of grid-annoying
+    @media only screen and (max-width: 500px) {
+      display: none;
+    }
   }// end of diamond-img
   .diamond-text {
     float: right;
@@ -74,14 +93,59 @@ $brand-color: #d6b2a4;
     top: 15%;
     left: 50%;
     z-index: 9999;
+    // text-align: center;
+    @media only screen and (max-width: 828px) {
+      top: 15%;
+      left: 26%;
+      float: none;
+    }
+    @media only screen and (max-width: 555px) {
+      width: 320px;
+      text-align: center;
+    }
+    @media only screen and (max-width: 470px) {
+      width: 320px;
+      text-align: center;
+      top: 10%;
+      left: 11%;
+    }
+    .mobile-img {
+      height: 300px;
+      max-width: 100%;
+      padding-bottom: 15px;
+      display: none;
+      @media only screen and (max-width: 470px) {
+        display: block;
+        margin: 0 auto;
+        transform: rotate(-45deg) translateY(-74px);
+        position: absolute;
+        margin-top: 100px;
+        left: 22%;
+        opacity: 0.2;
+      }
+    }
+    h4 {
+      @media only screen and (max-width: 470px) {
+        margin-top: 72px;
+      }
+    }
     a {
       display: block;
       text-align: right;
       float: right;
+      @media only screen and (max-width: 555px) {
+        text-align: center;
+        float: none;
+      }
       h5 {
         width: 100px;
+        padding-top: 10px;
         padding-bottom: 5px;
         border-bottom: 3px $brand-color solid;
+        @media only screen and (max-width: 555px) {
+          text-align: center;
+          margin: 0 auto;
+        }
       }
     }
   }
