@@ -52,20 +52,33 @@
         </div><!-- /.navbar-collapse -->
     </nav>
 
-    <div class="product-page">
-      <div class="img-wrapper">
-        <div class="img-wrapper__big-img">
-          <img src="images/test-hero.jpg" alt="" />
-        </div>
-        <div class="img-wrapper__sm-img">
-          <img src="images/test-hero.jpg" alt="" />
-          <img src="images/test-hero.jpg" alt="" />
-        </div>
-      </div>
-      <div class="text-box">
+    <!-- page-wrapper -->
+    <div class="page-wrapper">
 
-      </div>
-    </div>
+      <div class="img-wrapper">
+        <div class="hero-wrapper slider-for">
+          <img class="hero-wrapper__img" src="images/test-hero.jpg" alt="" />
+        </div>
+        <div class="thumbnail-wrapper">
+          <div class="slider-nav">
+            <img class="slider-img" src="images/test-hero.jpg" alt="" />
+            <img class="slider-img" src="images/test-hero.jpg" alt="" />
+          </div>
+        </div>
+      </div><!-- end of img-wrapper -->
+
+      <div class="text-wrapper">
+        <div class="text-box">
+          <h4>name</h4>
+          <h4>$$$</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat feugiat arcu, vel viverra leo ullamcorper pharetra. Cras aliquet mollis orci mollis tempor. Vivamus a risus sit amet orci tristique ultrices ac ac nunc. Fusce dictum purus a magna molestie, ac facilisis dolor pulvinar. Morbi id urna urna. Mauris maximus nibh quis accumsan venenatis. Aliquam tempus ac tellus at euismod.
+          </p>
+          <h5>Buy on Etsy</h5>
+        </div>
+      </div><!-- end of text-wrapper -->
+    </div><!-- end of page wrapper -->
+
 
     <footer>
       <p class="text-center">&copy 2016 Among Strangers</a></p>
@@ -76,6 +89,22 @@
         $('#navIcon').click(function(){
       		$(this).toggleClass('open');
       	});
+
+        $('.slider-for').slick({
+           slidesToShow: 1,
+           slidesToScroll: 1,
+           arrows: false,
+           fade: true,
+           asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+           slidesToShow: 2,
+           arrows: false,
+           slidesToScroll: 1,
+           asNavFor: '.slider-for',
+           centerMode: true,
+           focusOnSelect: true
+        });
 
       });
 

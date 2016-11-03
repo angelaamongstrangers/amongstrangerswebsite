@@ -9,6 +9,11 @@ header {
   margin: 0;
   font-size: 0.95em;
 }
+@media only screen and (max-width: 555px) {
+  .filter-wrapper {
+    display: none;
+  }
+}
 .filter-wrapper .navbar {
   margin: 70px auto 0 auto;
 }
