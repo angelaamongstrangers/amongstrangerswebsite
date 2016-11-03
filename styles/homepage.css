@@ -24,3 +24,54 @@
   padding: 10px;
   text-align: center;
 }
+.homepage-main__content {
+  width: 1000px;
+  height: 550px;
+  margin: 0 auto;
+  position: relative;
+}
+.homepage-main__content .diamond-img {
+  opacity: 0.3;
+  float: left;
+  position: absolute;
+}
+.homepage-main__content .diamond-img .grid-annoying {
+  padding-top: 40px;
+}
+.homepage-main__content .diamond-img .grid-annoying li {
+  display: inline-block;
+  position: relative;
+  margin: 31px -44px 85px 0;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  transform: rotate(45deg);
+}
+.homepage-main__content .diamond-img .grid-annoying li > img {
+  transform: rotate(-45deg) translateY(-23%);
+}
+.homepage-main__content .diamond-img .grid-annoying li:nth-child(even) {
+  top: 161px;
+}
+.homepage-main__content .diamond-img .grid-annoying li img {
+  display: block;
+  max-width: 145%;
+}
+.homepage-main__content .diamond-text {
+  float: right;
+  width: 400px;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  z-index: 9999;
+}
+.homepage-main__content .diamond-text a {
+  display: block;
+  text-align: right;
+  float: right;
+}
+.homepage-main__content .diamond-text a h5 {
+  width: 100px;
+  padding-bottom: 5px;
+  border-bottom: 3px #d6b2a4 solid;
+}

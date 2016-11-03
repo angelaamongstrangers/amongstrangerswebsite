@@ -31,8 +31,61 @@ $brand-color: #d6b2a4;
   }//end of hero-wrapper
 
   &__content {
+    width: 1000px;
+    height: 550px;
+    margin: 0 auto;
+    // background-color: red;
+    position: relative;
+    .diamond-img {
+      opacity: 0.3;
+      float: left;
+      position: absolute;
+      @mixin diamond-shape($el, $width) {
+        width:  $width;
+        height: $width;
+        transform: rotate(45deg);
+        > #{$el} {
+          transform: rotate(-45deg) translateY(-23%);
+        }
+      }
 
+    .grid-annoying {
+      padding-top: 40px;
+      li {
+        display: inline-block;
+        position: relative;
+        margin: 31px -44px 85px 0;
+        overflow: hidden;
+        @include diamond-shape(img, 200px);
+        &:nth-child(even) {
+          top: 161px;
+        }
+        img {
+          display: block;
+          max-width: 145%;
+        }
+      }
+    }// end of grid-annoying
+  }// end of diamond-img
+  .diamond-text {
+    float: right;
+    width: 400px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    z-index: 9999;
+    a {
+      display: block;
+      text-align: right;
+      float: right;
+      h5 {
+        width: 100px;
+        padding-bottom: 5px;
+        border-bottom: 3px $brand-color solid;
+      }
+    }
   }
+}//end of content
 
 
 
