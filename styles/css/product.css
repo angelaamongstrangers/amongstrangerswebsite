@@ -10,6 +10,11 @@
     margin: 20px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .page-wrapper {
+    height: 1000px;
+  }
+}
 .page-wrapper a {
   display: block;
   text-align: left;
@@ -45,8 +50,13 @@
 }
 .page-wrapper .img-wrapper .thumbnail-wrapper {
   margin: 10px auto;
-  padding: 10px;
+  padding: 100px 0 0 10px;
   position: relative;
+}
+@media only screen and (max-width: 528px) {
+  .page-wrapper .img-wrapper .thumbnail-wrapper {
+    padding: 10px;
+  }
 }
 .page-wrapper .img-wrapper .thumbnail-wrapper .slider-nav {
   display: inline-block;
@@ -68,7 +78,7 @@
   float: right;
   position: relative;
 }
-@media only screen and (max-width: 528px) {
+@media only screen and (max-width: 768px) {
   .page-wrapper .text-wrapper {
     float: none;
   }
