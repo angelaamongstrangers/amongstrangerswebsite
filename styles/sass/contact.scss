@@ -1,0 +1,57 @@
+$bg-color: #e2cabe;
+$bg-color2: #f4ddcd;
+$brand-color: #d6b2a4;
+$brand-color2: #e2cabe;
+$brand-color3: #eddad3;
+
+.page-wrapper {
+  display: block;
+  background: url(../../images/test-hero.jpg) no-repeat;
+  height: 600px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 10% 45%;
+  opacity: 0.7;
+  position: absolute;
+  width: 100%;
+  @media only screen and (max-width: 500px) {
+    height: 650px;
+  }
+}
+
+.img-wrapper {
+  width: 1000px;
+  height: 450px;
+  margin: 75px auto;
+  max-width: 100%;
+  z-index: 9999;
+  position: relative;
+  @media only screen and (max-width: 500px) {
+    height: 500px;
+  }
+}
+
+.diamond-text {
+  text-align: center;
+  width: 275px;
+  position: relative;
+  margin: 0 auto;
+  top: 15%;
+  .text {
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    h4 {
+       margin: 20px auto;
+    }
+  }
+  .shape {
+    background-color: $brand-color3;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    transform: rotate(-45deg) translateY(-23%);
+    margin: 20px auto;
+    opacity: 0.8;
+  }
+}

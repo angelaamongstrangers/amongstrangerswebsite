@@ -1,19 +1,6 @@
-.page-wrapper {
-  width: 100%;
-  position: absolute;
-  display: block;
-  background: url(../../images/test-hero.jpg) no-repeat;
-  height: 700px;
-  overflow: hidden;
-  background-size: cover;
-  background-position: 10% 45%;
-  background-color: #e2cabe;
-  opacity: 0.3;
-}
-
 .img-wrapper {
   width: 1000px;
-  height: 550px;
+  height: 450px;
   margin: 75px auto;
   max-width: 100%;
   z-index: 9999;
@@ -71,6 +58,9 @@
   left: 50%;
   z-index: 9999;
 }
+.img-wrapper .diamond-text h4 {
+  margin: 20px auto;
+}
 @media only screen and (max-width: 828px) {
   .img-wrapper .diamond-text {
     top: 15%;
@@ -94,6 +84,7 @@
 }
 .img-wrapper .diamond-text .mobile-img {
   height: 300px;
+  width: 300px;
   max-width: 100%;
   padding-bottom: 15px;
   display: none;

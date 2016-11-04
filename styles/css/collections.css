@@ -97,8 +97,8 @@
   padding-top: 25px;
   padding-bottom: 15px;
   border-bottom: 3px #d6b2a4 solid;
-  margin: 0;
-  float: right;
+  float: none;
+  margin: 0 auto;
 }
 @media only screen and (max-width: 555px) {
   .homepage-main__content .text-box a h5 {
