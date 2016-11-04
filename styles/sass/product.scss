@@ -4,74 +4,46 @@ $brand-color: #d6b2a4;
 $brand-color2: #e2cabe;
 $brand-color3: #eddad3;
 
-// .productpage-main {
-//   width: 940px;
-//   margin: 80px auto;
-//   height: auto;
-//   &__hero-wrapper {
-//     width: 50%;
-//     float: left;
-//     // background-color: #1d1d21;
-//     // position: relative;
-//     // width: 100%;
-//     .hero {
-//       width: 300px;
-//       // display: block;
-//       // background: url(../../images/test-hero.jpg) no-repeat;
-//       // height: 500px;
-//       // overflow: hidden;
-//       // background-size: cover;
-//       // background-position: 10% 45%;
-//       // opacity: 0.7;
-//       // position: relative;
-//
-//       @media only screen and (max-width: 528px) {
-//         background-position: 36% 45%;
-//         height: 350px;
-//       }
-//     }
-//   }//end of hero-wrapper
-//
-//   &__mini-slider {
-//     height: 200px;
-//     @media only screen and (max-width: 528px) {
-//       height: 150px;
-//     }
-//     .slider-nav {
-//       height: 100px;
-//       width: 900px;
-//       margin: 0 auto;
-//       @media only screen and (max-width: 528px) {
-//         margin: 0;
-//       }
-//       .slider-img {
-//         width: auto !important;
-//         height: 120px;
-//         margin: 10px 20px;
-//         @media only screen and (max-width: 528px) {
-//           height: 90px;
-//           margin: 10px;
-//         }
-//       }
-//     }
-//   }
-// }
-
 .page-wrapper {
   width: 900px;
-  margin: 50px auto 20px auto;
+  margin: 25px auto 50px auto;
   position: relative;
   height: 700px;
+  @media only screen and (max-width: 528px) {
+    height: 850px;
+    margin: 20px;
+  }
+  a {
+    display: block;
+    text-align: left;
+    float: left;
+    width: 100%;
+    .back {
+      width: 100px;
+      padding: 25px 0 15px;
+      border-bottom: 3px #d6b2a4 solid;
+      margin: 10px 0 50px 10px;
+      float: left;
+    }
+  }
   .img-wrapper {
     width: 50%;
     float: left;
-    position: absolute;
-    .slider-for { }
+    position:relative;
+
+    .slider-for {
+      height: 200px !important;
+    }
     .hero-wrapper {
       padding: 10px;
-      height: 350px;
+      height: 300px;
       &__img {
-        width: 500px !important;
+        @media only screen and (max-width: 528px) {
+          width: 300px !important;
+          display: block;
+          margin: 0 auto;
+          height: 200px !important;
+        }
       }
     }
     .thumbnail-wrapper {
@@ -79,13 +51,66 @@ $brand-color3: #eddad3;
       padding: 10px;
       position: relative;
       .slider-nav {
+        .slick-list{ padding: 0 !important;}
         display: inline-block;
         .slider-img {
-          width: 200px;
+          width: 150px;
           padding-right: 10px;
+          @media only screen and (max-width: 528px) {
+            width: 100px;
+          }
         }
       }
     }
   }
+  .text-wrapper {
+    width: 50%;
+    float: right;
+    position: relative;
+    @media only screen and (max-width: 528px) {
+      float: none;
+    }
+    .text-box {
+      margin-left: 30px;
+      width: 300px;
+      text-align: justify;
+      @media only screen and (max-width: 528px) {
+        margin:10px;
+      }
+      h4 {
+        margin-top:20px;
+      }
+
+    }
+    a {
+      display: block;
+      text-align: right;
+      float: right;
+      width: 100%;
+      .cta {
+        width: 100px;
+        padding-top: 25px;
+        padding-bottom: 15px;
+        border-bottom: 3px #d6b2a4 solid;
+        margin: 10px 0;
+        float: right;
+        @media only screen and (max-width: 528px) {
+          padding-top: 5px;
+        }
+      }
+      .next {
+        width: 100px;
+        padding-top: 25px;
+        padding-bottom: 15px;
+        border-bottom: 3px #d6b2a4 solid;
+        margin: 100px 0;
+        float: right;
+        @media only screen and (max-width: 528px) {
+          margin: 0;
+        }
+      }
+    }
+  }
+
 
 }

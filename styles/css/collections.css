@@ -90,14 +90,15 @@
 }
 .homepage-main__content .text-box a {
   display: block;
-  text-align: center;
+  width: 100%;
 }
 .homepage-main__content .text-box a h5 {
   width: 180px;
   padding-top: 25px;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
   border-bottom: 3px #d6b2a4 solid;
-  margin: 0 auto;
+  margin: 0;
+  float: right;
 }
 @media only screen and (max-width: 555px) {
   .homepage-main__content .text-box a h5 {
