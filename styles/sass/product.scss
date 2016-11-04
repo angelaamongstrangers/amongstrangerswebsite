@@ -70,12 +70,13 @@ $brand-color3: #eddad3;
     }
   }
   .text-wrapper {
-    width: 50%;
+    width: 45%;
     float: right;
     position: relative;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 830px) {
       float: none;
     }
+
     .text-box {
       margin-left: 30px;
       width: 300px;
