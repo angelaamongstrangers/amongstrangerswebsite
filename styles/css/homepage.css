@@ -33,6 +33,9 @@
 .homepage-main__hero-wrapper .logo-lockup img {
   width: 300px;
 }
+.homepage-main__hero-wrapper .color-box {
+  background-color: #1d1d21;
+}
 .homepage-main__content {
   width: 1000px;
   height: 550px;
