@@ -7,9 +7,25 @@
   position: relative;
   width: 100%;
 }
-.homepage-main__hero-wrapper .hero {
+.homepage-main__hero-wrapper .color-box {
+  background-color: #ad9582;
+  height: 450px;
+  position: absolute;
+  width: 100%;
+  z-index: 9;
+  opacity: 0.6;
+}
+.homepage-main__hero-wrapper .hero1 {
+  background: url(../../images/coll3/editorial1.jpg) no-repeat;
+}
+.homepage-main__hero-wrapper .hero2 {
+  background: url(../../images/coll3/editorial2.jpg) no-repeat;
+}
+.homepage-main__hero-wrapper .hero3 {
+  background: url(../../images/coll3/editorial3.jpg) no-repeat;
+}
+.homepage-main__hero-wrapper .hero1, .homepage-main__hero-wrapper .hero2, .homepage-main__hero-wrapper .hero3 {
   display: block;
-  background: url(../../images/test-hero.jpg) no-repeat;
   height: 450px;
   overflow: hidden;
   background-size: cover;
@@ -18,23 +34,21 @@
   position: relative;
 }
 @media only screen and (max-width: 528px) {
-  .homepage-main__hero-wrapper .hero {
+  .homepage-main__hero-wrapper .hero1, .homepage-main__hero-wrapper .hero2, .homepage-main__hero-wrapper .hero3 {
     background-position: 36% 45%;
     height: 350px;
   }
 }
 .homepage-main__hero-wrapper .logo-lockup {
   position: absolute;
-  top: 20%;
+  top: 5%;
   width: 100%;
   padding: 10px;
   text-align: center;
+  z-index: 9999;
 }
 .homepage-main__hero-wrapper .logo-lockup img {
-  width: 300px;
-}
-.homepage-main__hero-wrapper .color-box {
-  background-color: #1d1d21;
+  width: 400px;
 }
 .homepage-main__content {
   width: 1000px;
@@ -73,7 +87,7 @@
 }
 .homepage-main__content .diamond-img .grid-annoying li img {
   display: block;
-  max-width: 145%;
+  max-width: 220%;
 }
 @media only screen and (max-width: 828px) {
   .homepage-main__content .diamond-img .grid-annoying li {
@@ -132,15 +146,29 @@
     opacity: 0.2;
   }
 }
+.homepage-main__content .diamond-text h2 {
+  font-family: "Bitter", serif;
+  padding-bottom: 10px;
+}
 @media only screen and (max-width: 470px) {
-  .homepage-main__content .diamond-text h4 {
+  .homepage-main__content .diamond-text h2 {
     margin-top: 72px;
   }
+}
+.homepage-main__content .diamond-text p, .homepage-main__content .diamond-text a {
+  font-family: "Work Sans", sans-serif;
 }
 .homepage-main__content .diamond-text a {
   display: block;
   text-align: right;
   float: right;
+  color: #000;
+}
+.homepage-main__content .diamond-text a:hover {
+  text-decoration: none !important;
+  font-weight: bold !important;
+  cursor: pointer !important;
+  color: #d6b2a4;
 }
 @media only screen and (max-width: 555px) {
   .homepage-main__content .diamond-text a {

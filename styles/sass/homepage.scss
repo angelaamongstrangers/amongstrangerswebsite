@@ -3,6 +3,8 @@ $bg-color2: #f4ddcd;
 $brand-color: #d6b2a4;
 $brand-color2: #e2cabe;
 $brand-color3: #eddad3;
+$font-family-1: 'Bitter', serif;
+$font-family-2: 'Work Sans', sans-serif;
 
 //homepage
 
@@ -13,9 +15,25 @@ $brand-color3: #eddad3;
     background-color: #1d1d21;
     position: relative;
     width: 100%;
-    .hero {
+    .color-box {
+      background-color: #ad9582;
+      height: 450px;
+      position: absolute;
+      width: 100%;
+      z-index: 9;
+      opacity: 0.6;
+    }
+    .hero1 {
+      background: url(../../images/coll3/editorial1.jpg) no-repeat;
+    }
+    .hero2 {
+      background: url(../../images/coll3/editorial2.jpg) no-repeat;
+    }
+    .hero3 {
+      background: url(../../images/coll3/editorial3.jpg) no-repeat;
+    }
+    .hero1, .hero2, .hero3 {
       display: block;
-      background: url(../../images/test-hero.jpg) no-repeat;
       height: 450px;
       overflow: hidden;
       background-size: cover;
@@ -29,17 +47,15 @@ $brand-color3: #eddad3;
     }
     .logo-lockup {
       position: absolute;
-      top: 20%;
-      // left: 50%;
+      top: 5%;
       width: 100%;
       padding: 10px;
       text-align: center;
+      z-index: 9999;
+      // opacity: 0.4;
       img {
-        width: 300px;
+        width: 400px;
       }
-    }
-    .color-box {
-      background-color: #1d1d21;
     }
   }//end of hero-wrapper
 
@@ -79,7 +95,7 @@ $brand-color3: #eddad3;
         }
         img {
           display: block;
-          max-width: 145%;
+          max-width: 220%;
         }
         @media only screen and (max-width: 828px) {
           width: 150px;
@@ -98,7 +114,6 @@ $brand-color3: #eddad3;
     top: 15%;
     left: 50%;
     z-index: 9999;
-    // text-align: center;
     @media only screen and (max-width: 828px) {
       top: 15%;
       left: 26%;
@@ -129,15 +144,27 @@ $brand-color3: #eddad3;
         opacity: 0.2;
       }
     }
-    h4 {
+    h2 {
+      font-family: $font-family-1;
+      padding-bottom: 10px;
       @media only screen and (max-width: 470px) {
         margin-top: 72px;
       }
+    }
+    p, a {
+      font-family: $font-family-2;
     }
     a {
       display: block;
       text-align: right;
       float: right;
+      color: #000;
+      &:hover {
+        text-decoration: none !important;
+        font-weight: bold !important;
+        cursor: pointer !important;
+        color: $brand-color;
+      }
       @media only screen and (max-width: 555px) {
         text-align: center;
         float: none;
@@ -156,9 +183,6 @@ $brand-color3: #eddad3;
     }
   }
 }//end of content
-
-
-
 
 
 }// end of homepage-main

@@ -5,6 +5,7 @@ html {
 .nav li {
   text-transform: uppercase;
   font-size: 0.85em;
+  font-family: "Bitter", serif;
 }
 
 .navbar {
@@ -271,6 +272,7 @@ footer {
   border-top: none !important;
   background-color: #e2cabe;
   position: relative;
+  font-family: "Bitter", serif;
 }
 
 footer p {
