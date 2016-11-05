@@ -15,13 +15,26 @@ $font-family-2:  'Work Sans', sans-serif;
     background-color: #1d1d21;
     position: relative;
     width: 100%;
-    .hero {
+    .editorial1 {background: url(../../images/coll3/editorial1.jpg) no-repeat;}
+    .editorial2 {background: url(../../images/coll3/editorial2.jpg) no-repeat;}
+    .editorial3 {background: url(../../images/coll3/editorial3.jpg) no-repeat;}
+    .editorial4 {background: url(../../images/coll3/editorial4.jpg) no-repeat;}
+    .editorial5 {background: url(../../images/coll3/editorial5.jpg) no-repeat;}
+    .editorial6 {background: url(../../images/coll3/editorial6.jpg) no-repeat;}
+    .editorial1, .editorial2, .editorial3, .editorial6 {
+      background-position: 10% 45%;
+    }
+    .editorial4 {
+      background-position: 40% 40%;
+    }
+    .editorial5 {
+      background-position: 20% 65%;
+    }
+    .editorial1, .editorial2, .editorial3, .editorial4, .editorial5, .editorial6 {
       display: block;
-      background: url(../../images/test-hero.jpg) no-repeat;
       height: 500px;
       overflow: hidden;
       background-size: cover;
-      background-position: 10% 45%;
       opacity: 0.7;
       position: relative;
       @media only screen and (max-width: 528px) {
@@ -29,80 +42,99 @@ $font-family-2:  'Work Sans', sans-serif;
         height: 350px;
       }
     }
-    .logo-lockup {
-      position: absolute;
-      top: 20%;
-      // left: 50%;
-      width: 100%;
-      padding: 10px;
-      text-align: center;
-      img {
-        width: 300px;
-      }
-    }
 
   }//end of hero-wrapper
 
   &__mini-slider {
-    height: 200px;
+    // height: 100px;
+    width: 1000px;
+    margin: 0 auto;
     @media only screen and (max-width: 528px) {
       height: 150px;
     }
     .slider-nav {
-      height: 100px;
-      width: 900px;
       margin: 0 auto;
+      width: 800px;
+      border: transparent !important;
+      border-color: #000 !important;
       @media only screen and (max-width: 528px) {
         margin: 0;
       }
+      .slick-list {
+        height: auto;
+        padding: 0px 30px;
+       }
+      .slick-track {
+        transform: none !important;
+      }
       .slider-img {
+        border: transparent !important;
+        border-color: #000 !important;
         width: auto !important;
-        height: 120px;
-        margin: 10px 20px;
+        height: 90px;
+        margin: 10px 5px;
+        cursor: pointer;
         @media only screen and (max-width: 528px) {
           height: 90px;
           margin: 10px;
         }
+      }
+      .slick-current {
+        border: transparent !important;
+        border-color: #000 !important;
       }
     }
   }
 
   &__content {
     width: 1000px;
-    height: 350px;
-    margin: 0 auto;
+    height: 400px;
+    margin: 50px auto 0 auto;
     max-width: 100%;
-    // background-color: red;
     position: relative;
     @media only screen and (max-width: 550px) {
       height: 400px;
     }
     .text-box {
       text-align: center;
-      width: 550px;
+      width: 500px;
       margin: 0 auto;
       @media only screen and (max-width: 550px) {
         width: 350px;
         padding: 0 20px 0 0;
       }
-      h4 {
-        padding-bottom: 20px;
+      h2 {
+        font-family: $font-family-1;
+        padding-bottom: 10px;
+        @media only screen and (max-width: 470px) {
+          margin-top: 72px;
+        }
+      }
+      p, a {
+        font-family: $font-family-2;
       }
       a {
-        display: block;
-        width: 100%;
-        // text-align: center;
+        // display: block;
+        text-align: center ;
         // float: right;
+        color: #000;
+        margin: 0 auto;
+        &:hover {
+          text-decoration: none !important;
+          font-weight: bold !important;
+          cursor: pointer !important;
+          color: $brand-color;
+        }
         @media only screen and (max-width: 555px) {
-          // text-align: center;
-          // float: none;
+          text-align: center;
+          float: none;
         }
         h5 {
-          width: 180px;
-          padding-top: 25px;
-          padding-bottom: 15px;
+          width: 150px;
+          padding-top: 10px;
+          padding-bottom: 5px;
           border-bottom: 3px #d6b2a4 solid;
-          float: none;
+          text-align: center;
           margin: 0 auto;
           @media only screen and (max-width: 555px) {
             text-align: center;
@@ -110,7 +142,6 @@ $font-family-2:  'Work Sans', sans-serif;
           }
         }
       }
-
     }
   }
 }
