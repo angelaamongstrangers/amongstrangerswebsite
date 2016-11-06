@@ -79,6 +79,7 @@ html {
     }
   }
 
+
   .navbar-brand {
     float: none !important;
     position: absolute;
@@ -106,7 +107,7 @@ html {
 
   #navIcon {
     position: relative;
-    margin: 10px;
+    margin: 10px 20px;
     padding: 5px 0;
     width: 35px;
     height: 20px;
@@ -207,7 +208,7 @@ html {
 
   .navbar-brand {
     position: absolute;
-    width: 100%;
+    width: 0%;
     left: 0;
     top: 0;
     text-align: center;

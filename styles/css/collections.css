@@ -54,7 +54,8 @@
 }
 @media only screen and (max-width: 528px) {
   .homepage-main__mini-slider {
-    height: 150px;
+    height: 100px;
+    width: 350px;
   }
 }
 .homepage-main__mini-slider .slider-nav {
@@ -72,6 +73,11 @@
   height: auto;
   padding: 0px 30px;
 }
+@media only screen and (max-width: 528px) {
+  .homepage-main__mini-slider .slider-nav .slick-list {
+    padding: 0 !important;
+  }
+}
 .homepage-main__mini-slider .slider-nav .slick-track {
   transform: none !important;
 }
@@ -87,6 +93,7 @@
   .homepage-main__mini-slider .slider-nav .slider-img {
     height: 90px;
     margin: 10px;
+    display: block;
   }
 }
 .homepage-main__mini-slider .slider-nav .slick-current {
@@ -102,7 +109,7 @@
 }
 @media only screen and (max-width: 550px) {
   .homepage-main__content {
-    height: 400px;
+    height: 550px;
   }
 }
 .homepage-main__content .text-box {
@@ -110,10 +117,10 @@
   width: 500px;
   margin: 0 auto;
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 500px) {
   .homepage-main__content .text-box {
-    width: 350px;
-    padding: 0 20px 0 0;
+    width: 330px;
+    padding: 0 30px 0 0;
   }
 }
 .homepage-main__content .text-box h2 {
@@ -132,6 +139,7 @@
   text-align: center;
   color: #000;
   margin: 0 auto;
+  text-decoration: none !important;
 }
 .homepage-main__content .text-box a:hover {
   text-decoration: none !important;
@@ -148,7 +156,7 @@
 .homepage-main__content .text-box a h5 {
   width: 150px;
   padding-top: 10px;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
   border-bottom: 3px #d6b2a4 solid;
   text-align: center;
   margin: 0 auto;

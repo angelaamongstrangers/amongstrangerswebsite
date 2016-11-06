@@ -20,8 +20,13 @@
   text-align: left;
   float: left;
   width: 100%;
+  color: #000;
+}
+.page-wrapper a:hover {
+  color: #d6b2a4;
 }
 .page-wrapper a .back {
+  font-family: "Work Sans", sans-serif;
   width: 100px;
   padding: 25px 0 15px;
   border-bottom: 3px #d6b2a4 solid;
@@ -86,7 +91,6 @@
 .page-wrapper .text-wrapper .text-box {
   margin-left: 30px;
   width: 300px;
-  text-align: justify;
 }
 @media only screen and (max-width: 528px) {
   .page-wrapper .text-wrapper .text-box {
@@ -95,12 +99,22 @@
 }
 .page-wrapper .text-wrapper .text-box h4 {
   margin-top: 20px;
+  font-family: "Bitter", serif;
+}
+.page-wrapper .text-wrapper .text-box p {
+  font-family: "Work Sans", sans-serif;
 }
 .page-wrapper .text-wrapper a {
   display: block;
   text-align: right;
   float: right;
   width: 100%;
+  font-family: "Work Sans", sans-serif;
+  color: #000;
+}
+.page-wrapper .text-wrapper a:hover {
+  color: #d6b2a4;
+  transition: 0.2s ease;
 }
 .page-wrapper .text-wrapper a .cta {
   width: 100px;

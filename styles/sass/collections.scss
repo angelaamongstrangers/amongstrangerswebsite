@@ -50,7 +50,9 @@ $font-family-2:  'Work Sans', sans-serif;
     width: 1000px;
     margin: 0 auto;
     @media only screen and (max-width: 528px) {
-      height: 150px;
+      height: 100px;
+      // display: none;
+      width: 350px;
     }
     .slider-nav {
       margin: 0 auto;
@@ -63,6 +65,9 @@ $font-family-2:  'Work Sans', sans-serif;
       .slick-list {
         height: auto;
         padding: 0px 30px;
+        @media only screen and (max-width: 528px) {
+          padding: 0 !important;
+        }
        }
       .slick-track {
         transform: none !important;
@@ -77,6 +82,7 @@ $font-family-2:  'Work Sans', sans-serif;
         @media only screen and (max-width: 528px) {
           height: 90px;
           margin: 10px;
+          display: block
         }
       }
       .slick-current {
@@ -93,15 +99,15 @@ $font-family-2:  'Work Sans', sans-serif;
     max-width: 100%;
     position: relative;
     @media only screen and (max-width: 550px) {
-      height: 400px;
+      height: 550px;
     }
     .text-box {
       text-align: center;
       width: 500px;
       margin: 0 auto;
-      @media only screen and (max-width: 550px) {
-        width: 350px;
-        padding: 0 20px 0 0;
+      @media only screen and (max-width: 500px) {
+        width: 330px;
+        padding: 0 30px 0 0;
       }
       h2 {
         font-family: $font-family-1;
@@ -119,6 +125,7 @@ $font-family-2:  'Work Sans', sans-serif;
         // float: right;
         color: #000;
         margin: 0 auto;
+        text-decoration: none !important;
         &:hover {
           text-decoration: none !important;
           font-weight: bold !important;
@@ -132,7 +139,7 @@ $font-family-2:  'Work Sans', sans-serif;
         h5 {
           width: 150px;
           padding-top: 10px;
-          padding-bottom: 5px;
+          padding-bottom: 15px;
           border-bottom: 3px #d6b2a4 solid;
           text-align: center;
           margin: 0 auto;

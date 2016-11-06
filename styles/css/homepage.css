@@ -15,6 +15,11 @@
   z-index: 9;
   opacity: 0.6;
 }
+@media only screen and (max-width: 500px) {
+  .homepage-main__hero-wrapper .color-box {
+    display: none;
+  }
+}
 .homepage-main__hero-wrapper .hero1 {
   background: url(../../images/coll3/editorial1.jpg) no-repeat;
 }
@@ -46,9 +51,15 @@
   padding: 10px;
   text-align: center;
   z-index: 9999;
+  opacity: 0.4;
 }
 .homepage-main__hero-wrapper .logo-lockup img {
   width: 400px;
+}
+@media only screen and (max-width: 500px) {
+  .homepage-main__hero-wrapper .logo-lockup img {
+    display: none;
+  }
 }
 .homepage-main__content {
   width: 1000px;
@@ -135,15 +146,9 @@
   padding-bottom: 15px;
   display: none;
 }
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 500px) {
   .homepage-main__content .diamond-text .mobile-img {
-    display: block;
-    margin: 0 auto;
-    transform: rotate(-45deg) translateY(-74px);
-    position: absolute;
-    margin-top: 100px;
-    left: 22%;
-    opacity: 0.2;
+    display: none;
   }
 }
 .homepage-main__content .diamond-text h2 {
@@ -179,7 +184,7 @@
 .homepage-main__content .diamond-text a h5 {
   width: 100px;
   padding-top: 10px;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
   border-bottom: 3px #d6b2a4 solid;
   margin: 10px 12px 5px 0;
 }

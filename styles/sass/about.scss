@@ -3,124 +3,75 @@ $bg-color2: #f4ddcd;
 $brand-color: #d6b2a4;
 $brand-color2: #e2cabe;
 $brand-color3: #eddad3;
-$font-family-1:  'Bitter', serif;
+$font-family-1: 'Bitter', serif;
 $font-family-2: 'Work Sans', sans-serif;
+
+.page-wrapper {
+  display: block;
+  background: url(../../images/coll3/editorial2.jpg) no-repeat;
+  height: 650px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 10% 45%;
+  opacity: 0.7;
+  position: absolute;
+  width: 100%;
+  @media only screen and (max-width: 500px) {
+    height: 650px;
+  }
+}
 
 .img-wrapper {
   width: 1000px;
-  height: 450px;
+  height: 500px;
   margin: 75px auto;
   max-width: 100%;
-  z-index: 9999;
   position: relative;
   @media only screen and (max-width: 500px) {
     height: 500px;
   }
-  .diamond-img {
-    opacity:1;
-    float: left;
-    position: absolute;
-    @mixin diamond-shape($el, $width) {
-      width:  $width;
-      height: $width;
-      transform: rotate(45deg);
-      > #{$el} {
-        transform: rotate(-45deg) translateY(-23%);
-      }
-    }
+}
 
-  .grid-annoying {
-    padding-top: 40px;
-    li {
-      display: inline-block;
-      position: relative;
-      margin: 31px -44px 85px 0;
-      overflow: hidden;
-      @include diamond-shape(img, 200px);
-      &:nth-child(even) {
-        top: 161px;
-      }
-      img {
-        display: block;
-        max-width: 145%;
-        opacity: 0.8;
-      }
-      @media only screen and (max-width: 828px) {
-        width: 150px;
-        height: 150px
-      }
-    }
-  }// end of grid-annoying
-  @media only screen and (max-width: 500px) {
-    display: none;
-  }
-}// end of diamond-img
 .diamond-text {
-  float: right;
-  width: 400px;
+  text-align: center;
+  width: 310px;
+  position: relative;
+  margin: 0 auto;
+  height: 400px;
   position: absolute;
-  top: 15%;
-  left: 50%;
-  z-index: 9999;
-  // text-align: center;
-  h4 {
-    margin: 20px auto;
+  z-index: 99999;
+  top: 3%;
+  left: 33%;
+  @media only screen and (max-width: 500px) {
+    top: 0%;
+    left: 12%;
   }
-  @media only screen and (max-width: 828px) {
+  .text {
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    @media only screen and (max-width: 500px) {
+      width: 300px;
+    }
+    h2, h5 {font-family: $font-family-1;}
+    h2 {margin: 20px auto;}
+    p { font-family: $font-family-2;}
+
+  }
+
+}
+.shape {
+  background-color: $brand-color3;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  transform: rotate(-45deg) translateY(-23%);
+  margin: 0px auto;
+  opacity: 0.85;
+  top: 18%;
+  left: 32%;
+  @media only screen and (max-width: 500px) {
     top: 15%;
-    left: 26%;
-    float: none;
-  }
-  @media only screen and (max-width: 555px) {
-    width: 320px;
-    text-align: center;
-  }
-  @media only screen and (max-width: 470px) {
-    width: 320px;
-    text-align: center;
-    top: 10%;
-    left: 11%;
-  }
-  .mobile-img {
-    height: 300px;
-    width: 300px;
-    max-width: 100%;
-    padding-bottom: 15px;
-    display: none;
-    @media only screen and (max-width: 470px) {
-      display: block;
-      margin: 0 auto;
-      transform: rotate(-45deg) translateY(-74px);
-      position: absolute;
-      margin-top: 100px;
-      left: 22%;
-      opacity: 0.2;
-    }
-  }
-  h4 {
-    @media only screen and (max-width: 470px) {
-      margin-top: 72px;
-    }
-  }
-  a {
-    display: block;
-    text-align: right;
-    float: right;
-    @media only screen and (max-width: 555px) {
-      text-align: center;
-      float: none;
-    }
-    h5 {
-      width: 100px;
-      padding-top: 10px;
-      padding-bottom: 5px;
-      border-bottom: 3px $brand-color solid;
-      margin: 10px 12px 5px 0;
-      @media only screen and (max-width: 555px) {
-        text-align: center;
-        margin: 0 auto;
-      }
-    }
+    left: 8%;
   }
 }
-}//end of content

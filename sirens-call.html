@@ -14,7 +14,7 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
   <link href="https://fonts.googleapis.com/css?family=Bitter:400,700|Work+Sans:300,400" rel="stylesheet">
   <link rel="stylesheet" href="styles/css/global.css" media="screen" title="no title">
-  <link rel="stylesheet" href="styles/css/about.css" media="screen" title="no title">
+  <link rel="stylesheet" href="styles/css/product.css" media="screen" title="no title">
 
 
 </head>
@@ -53,28 +53,36 @@
         </div><!-- /.navbar-collapse -->
     </nav>
 
-    <div class="page-wrapper"></div>
+    <!-- page-wrapper -->
+    <div class="page-wrapper">
+      <a href="shop.html"><h6 class="back">Back to Shop</h6></a>
+
       <div class="img-wrapper">
-        <div class="diamond-text">
-          <div class="text">
-            <h2>About</h2>
-            <h5>An old soul in the New Age.</h5>
-            <p>
-              Among Strangers came to life in 2014 in San Francisco, California. Using naturally formed and some altered crystals, creator Angela Alarcon, values the spiritual nature of each stone, believing that each crystal carry distinct properties and healing qualities depending on the kind.
-            </p>
-            <p>
-              Among Strangers stands by the belief that each piece has already pre-chosen a bearer, and is hand crafted with intention into powerful talismans to serve the bearer’s highest and best.
-            </p>
-            <p>
-              The Among Strangers aesthetic resembles old relics dug up from the ground, with its organic formed nature made from the method of electroforming and plating metals.
-            </p>
+        <div class="hero-wrapper slider-for">
+          <img class="hero-wrapper__img" src="images/coll3/siren1.jpg" alt="" />
+          <img class="slider-img" src="images/coll3/siren2.jpg" alt="" />
+        </div>
+        <div class="thumbnail-wrapper">
+          <div class="slider-nav">
+            <img class="slider-img" src="images/coll3/siren1.jpg" alt="" />
+            <img class="slider-img" src="images/coll3/siren2.jpg" alt="" />
           </div>
         </div>
-        <div class="shape"></div>
-
       </div><!-- end of img-wrapper -->
 
+      <div class="text-wrapper">
+        <div class="text-box">
+          <h4>Siren's Call Necklace</h4>
+          <h4>$65</h4>
+          <p>
+            Made with an Aqua Aura Crystal point on a wrapped band. The bright blues and rainbow colors the crystal gives off reminds us of the water and mystic energy of the waterworld.
+          </p>
+          <a href="http://amongstrangers.etsy.com"><h5 class="cta">Buy on Etsy</h5></a>
+          <a href="terra.html"><h6 class="next">Next Piece</h6></a>
+        </div>
 
+      </div><!-- end of text-wrapper -->
+    </div><!-- end of page wrapper -->
 
 
     <footer>
@@ -86,6 +94,23 @@
         $('#navIcon').click(function(){
       		$(this).toggleClass('open');
       	});
+
+        $('.slider-for').slick({
+           slidesToShow: 1,
+           slidesToScroll: 1,
+           arrows: false,
+           fade: true,
+           asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+           slidesToShow: 2,
+           arrows: false,
+           slidesToScroll: 1,
+           asNavFor: '.slider-for',
+           centerMode: true,
+           focusOnSelect: true
+        });
+
       });
 
     </script>

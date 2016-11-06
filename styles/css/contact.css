@@ -1,6 +1,6 @@
 .page-wrapper {
   display: block;
-  background: url(../../images/test-hero.jpg) no-repeat;
+  background: url(../../images/coll3/editorial2.jpg) no-repeat;
   height: 600px;
   overflow: hidden;
   background-size: cover;
@@ -41,8 +41,24 @@
   text-align: center;
   margin: 0 auto;
 }
-.diamond-text .text h4 {
-  margin: 20px auto;
+.diamond-text .text h2, .diamond-text .text h5, .diamond-text .text p {
+  margin: 30px auto;
+  font-family: "Bitter", serif;
+}
+.diamond-text .text a {
+  color: #c35059;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+.diamond-text .text a:hover {
+  border-bottom: 1px solid #c35059;
+  color: #c35059;
+}
+.diamond-text .text p {
+  font-family: "Work Sans", sans-serif;
+}
+.diamond-text .text i {
+  padding: 15px;
 }
 .diamond-text .shape {
   background-color: #eddad3;

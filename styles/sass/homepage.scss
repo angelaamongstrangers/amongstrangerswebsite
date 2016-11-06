@@ -22,6 +22,9 @@ $font-family-2: 'Work Sans', sans-serif;
       width: 100%;
       z-index: 9;
       opacity: 0.6;
+      @media only screen and (max-width: 500px) {
+        display: none;
+      }
     }
     .hero1 {
       background: url(../../images/coll3/editorial1.jpg) no-repeat;
@@ -52,9 +55,12 @@ $font-family-2: 'Work Sans', sans-serif;
       padding: 10px;
       text-align: center;
       z-index: 9999;
-      // opacity: 0.4;
+      opacity: 0.4;
       img {
         width: 400px;
+        @media only screen and (max-width: 500px) {
+          display: none;
+        }
       }
     }
   }//end of hero-wrapper
@@ -73,6 +79,7 @@ $font-family-2: 'Work Sans', sans-serif;
       opacity: 0.3;
       float: left;
       position: absolute;
+
       @mixin diamond-shape($el, $width) {
         width:  $width;
         height: $width;
@@ -134,14 +141,8 @@ $font-family-2: 'Work Sans', sans-serif;
       max-width: 100%;
       padding-bottom: 15px;
       display: none;
-      @media only screen and (max-width: 470px) {
-        display: block;
-        margin: 0 auto;
-        transform: rotate(-45deg) translateY(-74px);
-        position: absolute;
-        margin-top: 100px;
-        left: 22%;
-        opacity: 0.2;
+      @media only screen and (max-width: 500px) {
+        display: none;
       }
     }
     h2 {
@@ -172,7 +173,7 @@ $font-family-2: 'Work Sans', sans-serif;
       h5 {
         width: 100px;
         padding-top: 10px;
-        padding-bottom: 5px;
+        padding-bottom: 15px;
         border-bottom: 3px $brand-color solid;
         margin: 10px 12px 5px 0;
         @media only screen and (max-width: 555px) {

@@ -23,7 +23,12 @@ $font-family-2: 'Work Sans', sans-serif;
     text-align: left;
     float: left;
     width: 100%;
+    color: #000;
+    &:hover {
+      color: $brand-color;
+    }
     .back {
+      font-family: $font-family-2;
       width: 100px;
       padding: 25px 0 15px;
       border-bottom: 3px #d6b2a4 solid;
@@ -82,12 +87,15 @@ $font-family-2: 'Work Sans', sans-serif;
     .text-box {
       margin-left: 30px;
       width: 300px;
-      text-align: justify;
       @media only screen and (max-width: 528px) {
         margin:10px;
       }
       h4 {
         margin-top:20px;
+        font-family: $font-family-1;
+      }
+      p {
+        font-family: $font-family-2;
       }
 
     }
@@ -96,6 +104,12 @@ $font-family-2: 'Work Sans', sans-serif;
       text-align: right;
       float: right;
       width: 100%;
+      font-family: $font-family-2;
+      color: #000;
+      &:hover {
+        color: $brand-color;
+        transition: 0.2s ease;
+      }
       .cta {
         width: 100px;
         padding-top: 25px;

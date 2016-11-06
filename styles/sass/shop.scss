@@ -7,11 +7,11 @@ $font-family-1:  'Bitter', serif;
 $font-family-2:  'Work Sans', sans-serif;
 
 header {
+  font-family: $font-family-1;
   font-size: 2em;
   text-align: center;
   padding: 10px 0 35px 0;
 }
-
 
 //filters
 .filter-wrapper {
@@ -29,11 +29,15 @@ header {
     .filter-nav {
       width: 100%;
       text-align: center;
+
       li {
         float: none;
         display: inline-block;
         padding: 5px 8px;
         margin: 0 7px;
+        a {
+          color: $brand-color;
+        }
       }
       .current a, a:hover {
         border-bottom: 1px $bg-color solid;
@@ -51,6 +55,7 @@ header {
 
 //product-mixitup
 .product-container {
+  min-height: 400px;
   padding: 2% 2% 0;
   -webkit-backface-visibility: hidden;
   text-align: center;
@@ -89,15 +94,6 @@ header {
   }
 }
 
-// @media all and (min-width: 540px) {
-//   .product-container .mix,
-//   .product-container .gap {
-//     // width: 23.5%;
-//     width: 33.5%;
-//   }
-// }
-//end of product-mixitup
-
 //individual image
 .product-box {
   padding: 5px;
@@ -108,15 +104,54 @@ header {
     background-size: cover;
   }
   .product-image1 {
-    background: url(../../images/test-hero.jpg) no-repeat center top;
+    background: url(../../images/coll3/dream1.jpg) no-repeat center top;
     background-size: cover;
   }
+  .product-image2 {
+    background: url(../../images/coll3/faerie.jpg) no-repeat center top;
+    background-size: cover;
+  }
+  .product-image3 {
+    background: url(../../images/coll3/heart1.jpg) no-repeat center top;
+    background-size: cover;
+  }
+  .product-image4 {
+    background: url(../../images/coll3/hecate1.jpg) no-repeat center top;
+    background-size: cover;
+  }
+  .product-image5 {
+    background: url(../../images/coll3/lilith1.jpg) no-repeat center top;
+    background-size: cover;
+  }
+  .product-image6 {
+    background: url(../../images/coll3/oleander1.jpg) no-repeat center top;
+    background-size: cover;
+  }
+  .product-image7 {
+    background: url(../../images/coll3/raven1.jpg) no-repeat center top;
+    background-size: cover;
+  }
+  .product-image8 {
+    background: url(../../images/coll3/siren1.jpg) no-repeat center top;
+    background-size: cover;
+  }
+  .product-image9 {
+    background: url(../../images/coll3/terra1.jpg) no-repeat center top;
+    background-size: cover;
+  }
+  .product-image10 {
+    background: url(../../images/coll3/warden1.jpg) no-repeat center top;
+    background-size: cover;
+  }
+
 }
 .product-details {
   padding-bottom: 35px;
+  font-family: $font-family-1;
 }
 
 .see-product{
+  font-family: $font-family-2;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -138,6 +173,9 @@ header {
   .text-box {
     position: absolute;
     padding: 40px 50px;
+    p {
+      color: #000;
+    }
   }
 }
 
